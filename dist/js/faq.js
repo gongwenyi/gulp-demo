@@ -1,0 +1,1 @@
+$(function(){var e=function(){$("tr:even").addClass("even"),$("tr:odd").addClass("odd"),$("tr").eq(0).css({background:"#fff"})};e(),$(document).on("click",".raya-op-del",function(){$(this).parent().parent().remove(),$("tr").removeClass("odd"),$("tr").removeClass("even"),e()})});

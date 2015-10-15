@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>星货仓后台管理新建专场</title>
+  <link href="css/public.min.css" rel="stylesheet">
+  <link href="css/date.css" rel="stylesheet">
+  <link href="css/addSpecial.css" rel="stylesheet">
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="info FloatLeft">
+        <div class="FloatLeft"><img src="../../images/logo.png"></div>
+        <h2 class="FloatLeft">后台管理</h2>
+        <p class="FloatLeft">欢迎进入星货仓后台管理系统！</p>
+      </div>
+      <div class="user FloatRight">
+        <div class="FloatLeft img-header"><img src="../../images/man.png"></div>
+        <p class="FloatLeft">Hi,Lance</p>
+        <div class="FloatLeft setting fa fa-cog">
+          <div class="popup hide">
+            <a href="javascript:;" class="fa fa-cog"></a>
+            <a href="javascript:;" class="fa fa-envelope"></a>
+            <a href="javascript:;" class="fa fa-lightbulb-o"></a>
+            <a href="javascript:;" class="fa fa-map-marker"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nav">
+      <a href="index.html?index=0" class="current parent" data-index="0">
+        <i class="fa fa-chevron-right"></i><i class="fa fa-bar-chart"></i>数据统计</a>
+        <div class="nav-child hide">
+          <a href="ghs.html?index=1" data-index="1">
+            <i class="fa fa-line-chart"></i>供货商统计</a>
+          <a href="xds.html?index=2" data-index="2">
+            <i class="fa fa-line-chart"></i>星电商统计</a>
+          <a href="wxz.html?index=3" data-index="3">
+            <i class="fa fa-line-chart"></i>物信证统计</a>
+          <a href="xse.html?index=4" data-index="4">
+            <i class="fa fa-line-chart"></i>销售额统计</a>
+          <a href="hcwxz.html?index=5" data-index="5">
+            <i class="fa fa-line-chart"></i>货仓物信证统计</a>
+        </div>
+      <a href="special.html?index=6" data-index="6">
+        <i class="fa fa-list-alt"></i>专场配置</a>
+      <a href="faq.html?index=7" data-index="7">
+        <i class="fa fa-question-circle"></i>FAQ配置</a>
+    </div>
+    <div class="main">
+      <div class="vee-top-bar">
+        <a href="javascript:;">
+          <i class="fa fa-chevron-left"></i>返回
+        </a>
+        <h2>新建专场</h2>
+      </div>
+      <form class="vee-form-box">
+        <div class="vee-form-row">
+          <div class="FloatLeft">
+            <label>专场名称</label>
+            <input type="text" class="vee-special-name vee-same-height" placeholder="不超过8个字">
+          </div>
+          <div class="FloatRight">
+            <label>专场时间</label>
+            <input type="text" class="vee-start-time vee-same-height" id="vee-date0" placeholder="开始时间">
+            <input type="text" class="vee-end-time vee-same-height" id="vee-date1" placeholder="截止时间">
+          </div>
+        </div>
+        <div class="vee-form-row">
+          <label>专场主题</label>
+          <input type="text" class="vee-special-topic vee-same-height" placeholder="请输入专场主题">
+        </div>
+        <div class="vee-form-row">
+          <label class="FloatLeft">专场内容</label>
+          <textarea class="FloatRight" placeholder="内容100字以内"></textarea>
+        </div>
+        <div class="vee-form-row">
+          <label class="FloatLeft vee-text">专场宣传广告图片</label>
+          <div class="vee-img FloatRight">
+            <div class="vee-img-show"><span>+</span><img src=""></div>
+            <input type="file" class="vee-img-url FloatRight">
+            <p class="vee-img-text">小于1M的jpeg/png/gif图片；图片尺寸：1920*300px</p>
+          </div>
+        </div>
+        <div class="vee-form-row">
+          <label class="FloatLeft vee-text">商品筛选</label>
+          <div class="vee-filter FloatRight">
+            <div class="vee-filter-search">
+              <p class="FloatLeft">选择品牌运营商</p>
+              <p class="FloatLeft">已选择<span class="vee-number">0</span>品牌</p>
+              <div class="FloatRight">
+                <input type="text" class="FloatLeft" placeholder="输入商品/商品名称">
+                <a href="javascript:;" class="vee-search FloatLeft">搜索</a>
+              </div>
+            </div>
+            <div class="vee-filter-nav">
+              <a href="javascript:;" class="vee-active">全部</a>
+              <a href="javascript:;">A</a>
+              <a href="javascript:;">B</a>
+              <a href="javascript:;">C</a>
+              <a href="javascript:;">D</a>
+              <a href="javascript:;">E</a>
+              <a href="javascript:;">F</a>
+              <a href="javascript:;">G</a>
+              <a href="javascript:;">H</a>
+              <a href="javascript:;">I</a>
+              <a href="javascript:;">J</a>
+              <a href="javascript:;">K</a>
+              <a href="javascript:;">L</a>
+              <a href="javascript:;">M</a>
+              <a href="javascript:;">N</a>
+              <a href="javascript:;">O</a>
+              <a href="javascript:;">P</a>
+              <a href="javascript:;">Q</a>
+              <a href="javascript:;">R</a>
+              <a href="javascript:;">S</a>
+              <a href="javascript:;">T</a>
+              <a href="javascript:;">U</a>
+              <a href="javascript:;">V</a>
+              <a href="javascript:;">W</a>
+              <a href="javascript:;">X</a>
+              <a href="javascript:;">Y</a>
+              <a href="javascript:;">Z</a>
+              <a href="javascript:;">其他</a>
+            </div>
+            <ul class="vee-filter-result">
+              <li>
+                <div class="vee-choose vee-checkbox">
+                  <span></span>
+                  <input type="checkbox">
+                </div>
+                <label class="ellipsis" title="珠海格力电器股份有限公司珠海格力电器">珠海格力电器股份有限公司珠海格力电器</label>
+              </li>
+              <li>
+                <div class="vee-choose vee-checkbox">
+                  <span></span>
+                  <input type="checkbox">
+                </div>
+                <label class="ellipsis">海尔集团电子商务有限公司</label>
+              </li>
+              <li>
+                <div class="vee-choose vee-checkbox">
+                  <span></span>
+                  <input type="checkbox">
+                </div>
+                <label class="ellipsis">创维集团有限公司</label>
+              </li>
+              <li>
+                <div class="vee-choose vee-checkbox">
+                  <span></span>
+                  <input type="checkbox">
+                </div>
+                <label class="ellipsis">华为科技有限公司</label>
+              </li>
+              <li>
+                <div class="vee-choose vee-checkbox">
+                  <span></span>
+                  <input type="checkbox">
+                </div>
+                <label class="ellipsis">TCL集团有限公司</label>
+              </li>
+              <li>
+                <div class="vee-choose vee-checkbox">
+                  <span></span>
+                  <input type="checkbox">
+                </div>
+                <label class="ellipsis">小米科技有限公司</label>
+              </li>
+              <li>
+                <div class="vee-choose vee-checkbox">
+                  <span></span>
+                  <input type="checkbox">
+                </div>
+                <label class="ellipsis">美的电器股份有限公司</label>
+              </li>
+              <li>
+                <div class="vee-choose vee-checkbox">
+                  <span></span>
+                  <input type="checkbox">
+                </div>
+                <label class="ellipsis">苏宁电器电子商务有限公司</label>
+              </li>
+              <li>
+                <div class="vee-choose vee-checkbox">
+                  <span></span>
+                  <input type="checkbox">
+                </div>
+                <label class="ellipsis">大众集团有限公司</label>
+              </li>
+              <li>
+                <div class="vee-choose vee-checkbox">
+                  <span></span>
+                  <input type="checkbox">
+                </div>
+                <label class="ellipsis">百度科技有限公司</label>
+              </li>
+              <li>
+                <div class="vee-choose vee-checkbox">
+                  <span></span>
+                  <input type="checkbox">
+                </div>
+                <label class="ellipsis">宝马集团有限公司</label>
+              </li>
+              <li>
+                <div class="vee-choose vee-checkbox">
+                  <span></span>
+                  <input type="checkbox">
+                </div>
+                <label class="ellipsis">中兴科技有限公司</label>
+              </li>
+            </ul>
+            <ul class="vee-filter-choosed"></ul>
+            <div class="vee-filter-type">
+              <label class="vee-first">心意（元）</label>
+              <div class="vee-choose vee-radio">
+                <span></span>
+                <input type="radio" name="xinyi">
+              </div>
+              <label>小于</label>
+              <input type="number" min="0">
+              <div class="vee-choose vee-radio">
+                <span></span>
+                <input type="radio" name="xinyi">
+              </div>
+              <label>大于</label>
+              <input type="number" min="0">
+              <div class="vee-choose vee-radio">
+                <span></span>
+                <input type="radio" name="xinyi">
+              </div>
+              <label>范围</label>
+              <input type="number" min="0">
+              <label>一</label>
+              <input type="number" min="0">
+            </div>
+            <div class="vee-filter-type">
+              <label class="vee-first">价格（元）</label>
+              <div class="vee-choose vee-radio">
+                <span></span>
+                <input type="radio" name="price">
+              </div>
+              <label>小于</label>
+              <input type="number" min="0">
+              <div class="vee-choose vee-radio">
+                <span></span>
+                <input type="radio" name="price">
+              </div>
+              <label>大于</label>
+              <input type="number" min="0">
+              <div class="vee-choose vee-radio">
+                <span></span>
+                <input type="radio" name="price">
+              </div>
+              <label>范围</label>
+              <input type="number" min="0">
+              <label>一</label>
+              <input type="number" min="0">
+            </div>
+            <div class="vee-filter-type">
+              <label class="vee-first">数量（元）</label>
+              <div class="vee-choose vee-radio">
+                <span></span>
+                <input type="radio" name="number">
+              </div>
+              <label>小于</label>
+              <input type="number" min="0">
+              <div class="vee-choose vee-radio">
+                <span></span>
+                <input type="radio" name="number">
+              </div>
+              <label>大于</label>
+              <input type="number" min="0">
+              <div class="vee-choose vee-radio">
+                <span></span>
+                <input type="radio" name="number">
+              </div>
+              <label>范围</label>
+              <input type="number" min="0">
+              <label>一</label>
+              <input type="number" min="0">
+            </div>
+            <div class="vee-filter-type">
+              <label class="vee-first">发货时间</label>
+              <div class="vee-choose vee-radio">
+                <span></span>
+                <input type="radio" name="date">
+              </div>
+              <label>小于</label>
+              <input type="text" id="vee-date2">
+              <div class="vee-choose vee-radio">
+                <span></span>
+                <input type="radio" name="date">
+              </div>
+              <label>大于</label>
+              <input type="text" id="vee-date3">
+              <div class="vee-choose vee-radio">
+                <span></span>
+                <input type="radio" name="date">
+              </div>
+              <label>范围</label>
+              <input type="text" id="vee-date4">
+              <label>一</label>
+              <input type="text" id="vee-date5">
+            </div>
+          </div>
+        </div>
+        <div class="vee-form-row vee-form-submit">
+          <a href="javascript:;" class="vee-submit">确定提交</a>
+          <a href="javascript:;" class="vee-save">保存草稿</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/public.min.js"></script>
+  <script src="js/date.min.js"></script>
+  <script src="js/addSpecial.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+@charset "utf-8";
+/*css document*/
+/*
+*author: gwy(vee)
+*/
+
+.vee-top-bar{
+  position: relative;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  background-color: #ececec;
+}
+.vee-top-bar a{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  margin-left: 30px;
+  font-size: 16px;
+  color: #666;
+}
+.fa-chevron-left:before {
+  content: "\f053";
+  margin-right: 5px;
+}
+.vee-top-bar h2{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.vee-form-box{
+  width: 90%;
+  min-width: 950px;
+  max-width: 1200px;
+  margin: 15px 0 0 35px;
+}
+.vee-form-row{
+  clear: both;
+  padding-top: 15px;
+}
+.vee-form-box label{
+  display: inline-block;
+  width: 85px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+}
+.vee-form-box input{
+  display: inline-block;
+  height: 50px;
+  padding-left: 15px;
+  line-height: 50px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.vee-special-name{
+  width: 335px;
+}
+.vee-start-time{
+  margin-right: 10px;
+}
+.vee-special-topic{
+  min-width: 844px;
+  width: calc(100% - 107px);
+}
+textarea{
+  min-width: 838px;
+  width: calc(100% - 111px);
+  height: 100px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  font-family:"microsoft yahei", "黑体", Arial;
+  resize: none;
+}
+label.vee-text{
+  line-height: 30px;
+}
+.vee-img{
+  position: relative;
+  min-width: 838px;
+  width: calc(100% - 91px);
+  height: 145px;
+  margin-bottom: 50px;
+  border-radius: 4px;
+  border: 1px dashed #ccc;
+  background-color: #fcfcfc;
+}
+.vee-img .vee-img-show, .vee-img .vee-img-url{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.vee-img .vee-img-url{
+  padding-left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.vee-img .vee-img-text{
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  font-size: 14px;
+}
+.vee-img-show span, .vee-img-show img{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.vee-img-show span{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 145px;
+  font-size: 36px;
+  color: #aaa;
+}
+.vee-img-show img{
+  max-width: 100%;
+}
+.vee-filter{
+  min-width: 838px;
+  width: calc(100% - 91px);
+  height: 145px;
+  border-radius: 4px;
+  border: 1px dashed #ccc;
+}
